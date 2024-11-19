@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Button = (text, color, fn) => {
+const Button = ({text, color, fn}) => {
     const[count, setCount] = useState(0)
 
     const click = () => {
