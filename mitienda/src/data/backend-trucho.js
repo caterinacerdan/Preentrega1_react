@@ -34,10 +34,10 @@ export const getProducts = () => {
     });
 }
 
-export const getProductsByCategory = (estatura) => {
+export const getProductsByCategory = (categoria) => {
     return new Promise((result, reject) => {
         setTimeout(() => {
-            result(base_de_datos.filter(e => e.estatura === estatura))
+            result(base_de_datos.filter(e => e.category === category))
             reject("error")
         }, 3000);
     });
